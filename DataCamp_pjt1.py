@@ -1,9 +1,12 @@
+### trying to make dictionary from a dataframe using iteration (for loop)
+
+
 import os
-import pandas as pd
+import pandas as pd 
 cwd = os.getcwd()
-print(cwd)
+print(cwd) # to check where I am
 os.chdir("/Users/Sophie/Downloads/suicide-rates-overview-1985-to-2016")
-print(cwd)
+print(cwd) # to check I successfuly changed my working directory 
 df = pd.read_csv('master.csv')
 langs_count = {}
 col = df['country']
